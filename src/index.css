@@ -1,0 +1,274 @@
+/* =========================
+   GENERAL STYLE
+========================= */
+body {
+  background: url("https://marketplace.canva.com/EAFLi4YUKxg/1/0/1600w/canva-dark-futuristic-wave-lines-desktop-background-soRo8D3604M.jpg")
+    no-repeat center center/cover;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.general-body-container {
+  width: 100%;
+}
+
+/* =========================
+   GLASS EFFECT BASE
+========================= */
+.glass,
+.profile-conatainer,
+.about-me-column,
+.skill-card,
+.tools-card,
+.project-card,
+footer div {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  padding: 20px;
+}
+
+.general-header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-column h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.navbar-column ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.navbar-column a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-column a:hover,
+.active-class-ul-li {
+  color: #f5c7f7;
+}
+
+/* =========================
+   HERO / PROFILE
+========================= */
+.profile-conatainer {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.profile-image-column {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.headline-column h2 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+.headline-column p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #e5e5e5;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.general-button-style {
+  margin-top: 30px;
+  padding: 12px 28px;
+  background-color: #37364d;
+  border: 1px solid white;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.general-button-style:hover {
+  background-color: #0c0c11;
+}
+
+/* =========================
+   ABOUT ME
+========================= */
+.about-me-container {
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.about-me-column {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+}
+
+.about-me-column h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-me-column p {
+  color: #e0e0e0;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.general-skills-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.skill-header h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.skill-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+/* =========================
+   TOOLS
+========================= */
+.general-tools-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.tools-header h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.tools-description {
+  max-width: 700px;
+  margin: 20px auto 40px;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.tools-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.tools-card {
+  padding: 25px;
+  text-align: center;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.general-project-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.project-header {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.project-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  padding: 30px;
+}
+
+.project-card p {
+  color: #e0e0e0;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #f5c7f7;
+  font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  margin: 60px 20px 30px;
+}
+
+footer div {
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .profile-conatainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .headline-column h2 {
+    font-size: 2rem;
+  }
+}
