@@ -1,12 +1,17 @@
-export default function FooterSection() {
+export default function FooterSection({
+  email,
+  linkedInLink,
+  gitHubLink,
+  location,
+}) {
   return (
     // Footer Section
-    <footer>
+    <footer id="footer">
       <div className="general-contact-container">
-        <a href="#">maryamarifgcc@gmail.com</a>
-        <a href="#">Linkdin</a>
-        <a href="#">GitHub</a>
-        <p>Kabul, Afghanistan</p>
+        <a href="#">{email}</a>
+        <a href={linkedInLink}>Linkdin</a>
+        <a href={gitHubLink}>GitHub</a>
+        <a href="#">{location}</a>
       </div>
     </footer>
   );

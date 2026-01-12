@@ -1,27 +1,27 @@
-export default function HeaderSection() {
+export default function HeaderSection({ name }) {
   return (
     // Header Section
     <header>
       <div className="general-header-container">
         <div className="logo-column">
-          <h1>Maryam Arif</h1>
+          <h1>{name}</h1>
         </div>
         <div class="navbar-column active">
           <nav>
             <ul class="nav-links">
               <li>
-                <a href="#" class="active-class-ul-li">
+                <a href="#about_me" class="active-class-ul-li">
                   About
                 </a>
               </li>
               <li>
-                <a href="">Skills and tools</a>
+                <a href="#skill">Skills and tools</a>
               </li>
               <li>
-                <a href="#">Projects</a>
+                <a href="#project">Projects</a>
               </li>
               <li>
-                <a href="#">Contact Me</a>
+                <a href="#footer">Contact Me</a>
               </li>
             </ul>
           </nav>

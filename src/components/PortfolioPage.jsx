@@ -6,23 +6,32 @@ import ProjectSection from "./ProjectSection";
 import SkillSection from "./SkillSection";
 import ToolSection from "./ToolSection";
 
-export default function PortfolioPage() {
+export default function PortfolioPage({ info }) {
   return (
-    <dev className="general-body-container">
+    <div className="general-body-container">
       {/* Header Section */}
-      <HeaderSection></HeaderSection>
+      <HeaderSection name={info.name}></HeaderSection>
       {/* Profile Section */}
-      <ProfileSection></ProfileSection>
+      <ProfileSection
+        headline={info.headline}
+        subHeadline={info.subHeadline}
+        image={info.profileImage}
+      ></ProfileSection>
       {/* About Me Section  */}
-      <AboutMeSection></AboutMeSection>
+      <AboutMeSection about={info.aboutMe}></AboutMeSection>
       {/* Skills Section  */}
-      <SkillSection></SkillSection>
+      <SkillSection infoSkill={info.skills}></SkillSection>
       {/* Tools  */}
-      <ToolSection></ToolSection>
+      <ToolSection infoTools={info.tools}></ToolSection>
       {/* Projects  */}
-      <ProjectSection></ProjectSection>
+      <ProjectSection infoProjects={info.projects}></ProjectSection>
       {/* Contact Info /Footer Section  */}
-      <FooterSection></FooterSection>
-    </dev>
+      <FooterSection
+        email={info.contact.email}
+        linkedInLink={info.contact.linkedInLink}
+        gitHubLink={info.contact.gitHubLink}
+        location={info.contact.location}
+      ></FooterSection>
+    </div>
   );
 }
